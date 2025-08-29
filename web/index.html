@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Google Ads Playbook - Hệ thống kiến thức tương tác về Google Ads cho eCommerce. 49 phần kiến thức chuyên sâu với case study thực tế." />
+  <meta name="keywords" content="Google Ads, eCommerce, Digital Marketing, Performance Marketing, YouTube Ads, Shopping Ads" />
+  <meta name="author" content="Chelsea799 DVT x Hulo E-Com" />
+  <meta name="theme-color" content="#1e40af" />
+  
+  <title>Google Ads Playbook — Interactive Knowledge Graph</title>
+  
+  <!-- Preload fonts for better performance -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet"></noscript>
+  
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/marked/marked.min.js"></script>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-content">
+      <div class="loading-spinner"></div>
+      <h2>Đang tải Google Ads Playbook...</h2>
+      <p>Hệ thống kiến thức tương tác đang được khởi tạo</p>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-content">
+      <div class="header-left">
+        <div class="logo-section">
+          <div class="logo-icon">📊</div>
+          <div class="logo-text">
+            <h1>Google Ads Playbook</h1>
+            <div class="subtitle">Interactive Knowledge Graph</div>
+          </div>
+        </div>
+        <div class="author-info">
+          <span class="author-badge">Chelsea799 DVT</span>
+          <span class="separator">×</span>
+          <span class="author-badge">Hulo E-Com</span>
+        </div>
+      </div>
+      
+      <div class="header-center">
+        <nav class="main-nav">
+          <a href="#overview" class="nav-item active">Tổng quan</a>
+          <a href="#youtube" class="nav-item">YouTube Ads</a>
+          <a href="#shopping" class="nav-item">Shopping Ads</a>
+          <a href="#case-studies" class="nav-item">Case Studies</a>
+        </nav>
+      </div>
+      
+      <div class="header-right">
+        <div class="header-actions">
+          <div class="search-container">
+            <input type="text" class="search-input-header" placeholder="Tìm kiếm..." id="search-input-header">
+            <button class="search-btn" aria-label="Tìm kiếm">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+            </button>
+          </div>
+          <button class="settings-btn" aria-label="Cài đặt">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="legend-container">
+      <div id="legend" class="legend-content">
+        <span class="legend blue">Blue: Overview/Strategy/Reporting/AI/Data</span>
+        <span class="legend green">Green: Funnel/Search/Landing/Monetize/Ops/Bidding</span>
+        <span class="legend red">Red: YouTube/Case/Display</span>
+        <span class="legend yellow">Yellow: Shopping/Foundation/NonBrand/Copy</span>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="container-wide">
+      <div class="content-wrapper">
+        <div id="graph" class="graph-container">
+          <!-- Graph content will be dynamically generated here -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal Popup -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <div class="modal-header">
+        <div id="modal-title"></div>
+        <button id="modal-close" aria-label="Đóng modal">✕</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+      <div class="modal-footer">
+        <a id="modal-open-file" href="#" target="_blank" rel="noopener noreferrer">Đọc toàn bộ tài liệu</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+   <div class="footer-container">
+  <footer class="footer">
+    <div class="container">
+      <p><em>Bộ tài liệu này được biên soạn dựa trên kinh nghiệm thực chiến và nghiên cứu chuyên sâu về Google Ads trong lĩnh vực eCommerce. Mỗi phần đều có căn cứ rõ ràng và có thể áp dụng ngay vào thực tế.</em></p>
+    </div>
+  </footer>
+</div>
+
+  <script src="graph-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
